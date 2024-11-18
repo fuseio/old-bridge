@@ -1,0 +1,325 @@
+[
+    {
+        "name": "Fuse",
+        "address": "",
+        "symbol": "FUSE",
+        "description": "Fuse Network a Layer-1 (L1) EVM-compatible public blockchain powering the Fuse platform. <br></br> The Fuse Network blockchain uses a variant of delegated Proof of Stake (dPoS) for achieving consensus. The consensus is secured by a significant number of independent validators, only one of which is run by the Fuse Foundation.<br></br>Validators are also responsible for Fuse Networks governance: adopting the network protocol changes via Fuse Improvement Proposals (FIPs).",
+        "links": {
+            "twitter_username": "Fuse_network",
+            "website": "https://www.fuse.io/",
+            "telegram": "https://t.me/fuseio"
+        }
+    },
+    {
+        "name": "Dai Stablecoin on Fuse",
+        "address": "0x94Ba7A27c7A95863d1bdC7645AC2951E0cca06bA",
+        "symbol": "DAI",
+        "description": "DAI is an Ethereum-based stablecoin (stable-price cryptocurrency) whose issuance and development is managed by the Maker Protocol and the MakerDAO decentralized autonomous organization.<br></br>The price of DAI is soft-pegged to the U.S. dollar and is collateralized by a mix of other cryptocurrencies that are deposited into smart-contract vaults every time new DAI is minted.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "GoodDollar",
+        "address": "0x495d133B938596C9984d462F007B676bDc57eCEC",
+        "symbol": "G$",
+        "description": "GoodDollar ($G) aims is a reserve-backed token that is distributed daily as a form of digital basic income that can be distributed daily to registered users as a form of universal basic income (UBI). <br></br>At launch, each $G token will be backed by DAI. The UBI model is sustained by supporters who deposit underlying assets onto the platform and then yield farm on supported DeFi protocols. A portion of the accrued interest is returned to supporters, with the rest collateralized for new $G tokens that are distributed each day. GoodDollar is a non-profit funded by donations from eToro. GoodDollar claims that new wallets have been created in countries like South Africa, Nigeria, and Venezuela.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Bitazza",
+        "address": "0x7641d492c17795Fb4cbaa8DF99116c9c482C81a8",
+        "symbol": "BTZ",
+        "description": "Founded in 2018, Bitazza is a centralized digital asset trading platform that functions as an interconnected trade network composed of related exchanges and brokers with direct integration to local financial institutions and custodian services in multiple countries.<br></br> Bitazza is one of the fastest-growing digital asset platforms with more than 600,000 app installs and a monthly trading volume of $600+ million as of January 2022. Bitazza’s mission is to bring digital assets, investment banking, and blockchain-based cashless payments together in one integrated global ecosystem that bridges the gap between centralized and decentralized financial solutions.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "USD Coin on Fuse",
+        "address": "0x620fd5fa44BE6af63715Ef4E65DDFA0387aD13F5",
+        "symbol": "USDC",
+        "description": "USD Coin (known by its ticker USDC) is a stablecoin that is pegged to the U.S. dollar on a 1:1 basis. Every unit of this cryptocurrency in circulation is backed up by $1 that is held in reserve, in a mix of cash and short-term U.S. Treasury bonds. The Centre consortium, which is behind this asset, says USDC is issued by regulated financial institutions.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Wrapped BTC on Fuse",
+        "address": "0x33284f95ccb7B948d9D352e1439561CF83d8d00d",
+        "symbol": "WBTC",
+        "description": "Wrapped BTC (wBTC) on the Fuse blockchain is a tokenized representation of Bitcoin (BTC). It is created by locking real BTC in a custodial account, and in return, users receive an equivalent amount of wBTC on the Fuse network. This enables BTC holders to access DeFi applications and utilize their BTC value within the Fuse ecosystem while still maintaining exposure to Bitcoin's price fluctuations.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Wrapped Ether on Fuse",
+        "address": "0xa722c13135930332Eb3d749B2F0906559D2C5b99",
+        "symbol": "WETH",
+        "description": "Wrapped Ether (wETH) on the Fuse blockchain is a tokenized version of Ethereum's native cryptocurrency, Ether (ETH). It allows ETH holders to bring their assets onto the Fuse network by depositing ETH into a smart contract in exchange for wETH tokens. These tokens can then be used within the Fuse DeFi ecosystem for various purposes, such as lending, borrowing, and trading, while retaining the value of their ETH holdings.",
+        "links": {
+            "twitter_username": "Fuse_network",
+            "website": "https://www.fuse.io/",
+            "telegram": "https://t.me/fuseio"
+
+        }
+    },
+  
+    {
+        "name": "Tether USD on Fuse",
+        "address": "0xFaDbBF8Ce7D5b7041bE672561bbA99f79c532e10",
+        "symbol": "USDT",
+        "description": "Launched in 2014, Tether is a blockchain-enabled platform designed to facilitate the use of fiat currencies in a digital manner. Tether works to disrupt the conventional financial system via a more modern approach to money. Tether has made headway by giving customers the ability to transact with traditional currencies across the blockchain, without the inherent volatility and complexity typically associated with a digital currency. As the first blockchain-enabled platform to facilitate the digital use of traditional currencies (a familiar, stable accounting unit), Tether has democratised cross-border transactions across the blockchain.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Kyber Network Crystal on Fuse",
+        "address": "0x43B17749B246fd2a96DE25d9e4184E27E09765b0",
+        "symbol": "KNC",
+        "description": "Kyber Network is a multi-chain hub of liquidity protocols that aggregates liquidity from various sources to provide secure and instant transactions on any decentralized application (DApp). The main goal of Kyber Network is to enable DeFi DApps, decentralized exchanges (DEXs) and other users easy access to deep liquidity pools that provide the best rates.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Wrapped Fuse",
+        "address": "0x0BE9e53fd7EDaC9F859882AfdDa116645287C629",
+        "symbol": "WFUSE",
+        "description": "WFUSE is the wrapped version of the FUSE token.<br></br>WFUSE tokens, like WETH or Wrapped Bitcoin, are tokenized versions of cryptocurrencies that are pegged to the value of the original coin and can be unwrapped at any point.",
+        "links": {
+            "twitter_username": "Fuse_network",
+            "website": "https://www.fuse.io/",
+            "telegram": "https://t.me/fuseio"
+
+        }
+    },
+    {
+        "name": "MANTRA",
+        "address": "0x7F59aE3a787C0d1D640F99883d0e48c22188C54f",
+        "symbol": "OM",
+        "description": "MANTRA is a first of its kind, vertically-integrated and regulatory compliant blockchain ecosystem. The MANTRA OMniverse encompasses the DAO; MANTRA Nodes: a blockchain infrastructure-as-a-service business that includes retail staking, institutional delegation, node management and white-label validator operations; MANTRA Chain: a protocol for regulated assets for the Cosmos ecosystem; and MANTRA Finance: a globally-regulated DeFi platform that brings the speed and transparency of DeFi to the world of traditional finance.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "ChainLink",
+        "address": "0x0972F26e8943679b043de23df2fD3852177A7c48",
+        "symbol": "LINK",
+        "description": "Founded in 2017, Chainlink is a blockchain abstraction layer that enables universally connected smart contracts. Through a decentralized oracle network, Chainlink allows blockchains to securely interact with external data feeds, events and payment methods, providing the critical off-chain information needed by complex smart contracts to become the dominant form of digital agreement.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "The Graph",
+        "address": "0x025a4c577198D116Ea499193E6D735FDb2e6E841",
+        "symbol": "GRT",
+        "description": "The Graph is an indexing protocol for querying data for networks like Ethereum and IPFS, powering many applications in both DeFi and the broader Web3 ecosystem. Anyone can build and publish open APIs, called subgraphs, that applications can query using GraphQL to retrieve blockchain data. There is a hosted service in production that makes it easy for developers to get started building on The Graph and the decentralized network will be launching later this year. The Graph currently supports indexing data from Ethereum, IPFS and POA, with more networks coming soon.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Fuse Dollar",
+        "address": "0x249BE57637D8B013Ad64785404b24aeBaE9B098B",
+        "symbol": "fUSD (Deprecated)",
+        "description": "fUSD v1 is Fuse's native stablecoin backed by wrapped USDC. It is now deprecated and liquidity was migrated to fUSD v2.",
+        "links": {
+            "twitter_username": "Fuse_network",
+            "website": "https://www.fuse.io/",
+            "telegram": "https://t.me/fuseio"
+
+        }
+    },
+    {
+        "name": "Fuse Dollar",
+        "address": "0xd0ce1b4A349C35e61Af02f5971e71ac502441E49",
+        "symbol": "fUSD",
+        "description": "Fuse Dollar (fUSD v2) is Voltage's innovative stablecoin backed by USDT, BUSD, and USDC. It ensures consistent value, reduces liquidity fragmentation, and offers users opportunities to earn through the Voltage DEX.",
+        "links": {
+            "twitter_username": "Fuse_network",
+            "website": "https://www.fuse.io/",
+            "telegram": "https://t.me/fuseio"
+
+        }
+    },
+    {
+        "name": "BNB on Fuse",
+        "address": "0x6acb34b1Df86E254b544189Ec32Cf737e2482058",
+        "symbol": "BNB",
+        "description": "Binance Coin is the cryptocurrency of the Binance platform. It is a trading platform exclusively for cryptocurrencies. The name Binance is a combination of binary and finance. Thus, the startup name shows that only cryptocurrencies can be traded against each other. It is not possible to trade crypto currencies against Fiat. The platform achieved an enormous success within a very short time and is focused on worldwide market with Malta headquarters. The cryptocurrency currently has a daily trading volume of 1.5 billion - 2 billion US dollars and is still increasing. In total, there will only be 200 million BNBs. Binance uses the ERC20 token standard from Ethereum and has distributed it as follow: 50% sold on ICO, 40% to the team and 10% to Angel investors. The coin can be used to pay fees on Binance. These include trading fees, transaction fees, listing fees and others. Binance gives you a huge discount when fees are paid in BNB. The schedule of BNB fees discount is as follow: In the first year, 50% discount on all fees, second year 25% discount, third year 12.5% discount, fourth year 6.75 % discount, and from the fifth year onwards there is no discount. This structure is used to incentivize users to buy BNB and do trades within Binance. Binance announced in a buyback plan that it would buy back up to 100 million BNB in Q1 2018. The coins are then burned. This means that they are devaluated to increase the value of the remaining coins. This benefits investors. In the future, the cryptocurrency will remain an asset on the trading platform and will be used as gas. Other tokens that are issued by exchanges include Bibox Token, OKB, Huobi Token, and more.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "DEXTools",
+        "address": "0x2f60a843302F1Be3FA87429CA9d684f9091b003c",
+        "symbol": "DEXT",
+        "description": "DEXTools is an app and ecosystem for traders that provides info about all the decentralized markets. Assimilating blockchain data into one comprehensive UI, DEXTools allows you to have a clear vision about your trading, investments, and the current state of the cryptomarket.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Binance USD",
+        "address": "0x6a5F6A8121592BeCd6747a38d67451B310F7f156",
+        "symbol": "BUSD",
+        "description": "Binance USD (BUSD) is a 1:1 USD-backed stable coin issued by Binance (in partnership with Paxos), Approved and regulated by the New York State Department of Financial Services (NYDFS), The BUSD Monthly Audit Report can be viewed from the official website. Launched on 5 Sep 2019, BUSD aims to meld the stability of the dollar with blockchain technology. It is a digital fiat currency, issued as ERC-20 and supports BEP-2.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "SushiSwap",
+        "address": "0x90708b20ccC1eb95a4FA7C8b18Fd2C22a0Ff9E78",
+        "symbol": "SUSHI",
+        "description":"SushiSwap (SUSHI) is an example of an automated market maker (AMM). An increasingly popular tool among cryptocurrency users, AMMs are decentralized exchanges which use smart contracts to create markets for any given pair of tokens.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Elk Finance",
+        "address": "0xE1C110E1B1b4A1deD0cAf3E42BfBdbB7b5d7cE1C",
+        "symbol": "ELK",
+        "description": "Elk.Finance is a decentralized network for cross-chain liquidity, allowing trustless and secure value transfer across chains (e.g., Ethereum, Binance Smart Chain, Matic, Avalanche). Elk users can swap tokens across chains seamlessly with sub-second speed. Any chain, anytime, anywhere.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Stable Fuse",
+        "address": "0x8A5eE71Cd4Db6b7ffdCE37313006e48FaD6ADdB0",
+        "symbol": "oneFUSE",
+        "description": "An ICHI built stablecoin backed by FUSE and USDC, oneFUSE is the amalgamation of the FUSE community's Decentralized Monetary Authority (DMA). Through ICHI's smart contract platform audited by Quantstamp and Solidified, oneFUSE was created as a governance and stable token that enables day-to-day mobile crypto payments.",
+        "links": {
+            "twitter_username": "Fuse_network",
+            "website": "https://www.fuse.io/",
+            "telegram": "https://t.me/fuseio"
+        }
+    },
+    {
+        "name": "Beefy",
+        "address": "0x2bF9b864cdc97b08B6D79ad4663e71B8aB65c45c",
+        "symbol": "BIFI",
+        "description": "Beefy is a Decentralized, Multichain Yield Optimizer platform that allows its users to earn compound interest on their crypto holdings.<br></br>Through a set of investment strategies secured and enforced by smart contracts, Beefy Finance automatically maximizes the user rewards from various liquidity pools (LPs),‌ ‌automated market making (AMM) projects,‌ ‌and‌ ‌other yield‌ farming ‌opportunities in the DeFi ecosystem.<br></br>      The main product offered by Beefy Finance are the 'Vaults' in which you stake your crypto tokens. The investment strategy tied to the specific vault will automatically increase your deposited token amount by compounding arbitrary yield farm reward tokens back into your initially deposited asset. Despite the name 'Vault' suggests, your funds are never locked in any vault on Beefy Finance: you can always withdraw at any moment in time.<br></br>DeFi applications are unique in the sense that they are permissionless and trustless, meaning that anyone with a supported wallet can interact with them without the need for a trusted middleman. While you have funds staked in a vault, you remain 100% in control of your crypto.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Luna Terra",
+        "address": "0x588e24DEd8f850b14BB2e62E9c50A7Cd5Ee13Da9",
+        "symbol": "atLUNA",
+        "description": "Terra is a blockchain protocol that uses fiat-pegged stablecoins to power price-stable global payments systems. According to its white paper, Terra combines the price stability and wide adoption of fiat currencies with the censorship-resistance of Bitcoin (BTC) and offers fast and affordable settlements.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "UST Terra",
+        "address": "0x0D58a44be3dCA0aB449965dcc2c46932547Fea2f",
+        "symbol": "atUST",
+        "description": "",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Dogelon Mars",
+        "address": "0x5DD8015cec49F4dB01fd228F688BF30337d3e0A9",
+        "symbol": "ELON",
+        "description": "Dogelon Mars is a dog-themed meme coin on Ethereum and Polygon. It follows the example of other successful dog coins like Dogecoin, Shiba Inu and Floki Inu.<br></br>Dogelon Mars plays on several popular themes in the meme coin space. Its name is a mixture of Dogecoin and Elon Musk, the billionaire entrepreneur who is an outspoken supporter of Doge. It alludes to Mars, a spin on the famous moon meme, implying that Dogelon will experience a massive upward movement. Beyond its tongue-in-cheek name, Dogelon Mars has managed to build a significant community, with more than 300,000 Twitter followers and more than 84,000 followers on Telegram.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Volt",
+        "address": "0x34Ef2Cc892a88415e9f02b91BfA9c91fC0bE6bD4",
+        "symbol": "VOLT",
+        "description": "VOLT is the token of Voltage Finance DAO. Essential for governance, and the DEX’s innovation. VOLT also acts as a value capture tool and incentive, ensuring the platform’s economic growth aligns with its adoption.",
+        "links": {
+            "twitter_username": "Fuse_network",
+            "website": "https://www.fuse.io/",
+            "telegram":"https://t.me/voltage_finance"
+
+        }
+    },
+    {
+        "name": "Angle protocol",
+        "address": "0xeFAeeE334F0Fd1712f9a8cc375f427D9Cdd40d73",
+        "symbol": "agEUR",
+        "description": "agEUR is a stablecoin of the Angle Protocol which value is pegged to the Euro. This stablecoin is backed by derivatives and by the insurance fund of the Angle Protocol. It is fully convertible against collateral held in the protocol. To know the value of 1 Euro, the protocol looks at oracle feeds from Uniswap V3 and Chainlink.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "AMP",
+        "address": "0x2b09179D26FdDB27a24ee25328890791c7A984c2",
+        "symbol": "AMP",
+        "description": "Amp is an open-source, decentralized protocol that provides collateral as a service. Amp is described as the new digital collateral token offering instant, verifiable assurances for any kind of value transfer. Using Amp, networks like Flexa can quickly and irreversibly secure transactions for a wide variety of asset-related use cases.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Coineus",
+        "address": "0x4e69Ae0CD024754655b4eF74F24A8DCB39Ba07e8",
+        "symbol": "CEUS",
+        "description": "Coineus is a cryptocurrency project aiming to simplify and enhance the DeFi experience. It offers a comprehensive suite of tools and services, including a wallet, decentralized exchange (DEX), and yield optimization strategies. Coineus focuses on user-friendly interfaces, seamless asset management, and yield generation, making it an accessible platform for both newcomers and experienced users looking to navigate the decentralized finance landscape effectively.",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "USD Coin V2",
+        "address": "0x28C3d1cD466Ba22f6cae51b1a4692a831696391A",
+        "symbol": "USDC V2",
+        "description": "",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    },
+    {
+        "name": "Wrapped Ether V2",
+        "address": "0x5622F6dC93e08a8b717B149677930C38d5d50682",
+        "symbol": "WETH V2",
+        "description": "",
+        "links": {
+            "twitter_username": "",
+            "website": ""
+        }
+    }
+]

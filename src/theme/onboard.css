@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+:root {
+  --hover-color:#EFEFEF;
+  --primary-text-color:black;
+  --background-color:black;
+    --onboard-font-family-normal: 'Montserrat', sans-serif;
+    --onboard-connect-sidebar-progress-background:#70E000;
+    --onboard-connect-sidebar-progress-color:white;
+    --onboard-link-color:#70E000;
+    --onboard-wallet-button-background-hover:var(--hover-color);
+    --onboard-wallet-button-color:var(--primary-text-color);
+    --onboard-wallet-button-border-color:rgba(60, 61, 65,0.7);
+    --onboard-wallet-button-border-radius:10px;
+    --onboard-modal-border-radius:10px;
+    --onboard-modal-color:white;
+    --onboard-action-required-text-color:black;
+    --onboard-wallet-app-icon-background:transparent;
+    --onboard-modal-background:var(--background-color);
+    --account-center-maximized-action-background-hover:var(--hover-color);
+    --account-center-maximized-account-section-background-hover:var(--hover-color);
+    --account-center-maximized-upper-action-background-hover:var(--hover-color);
+    --account-center-app-btn-text-color:var(--primary-text-color);
+    --account-center-maximized-network-text-color:var(--primary-text-color);
+    --account-center-minimized-chain-select-background:white;
+    --account-center-minimized-balance-color:#9ca0a8;
+    --account-center-minimized-address-color:var(--primary-text-color);
+    --account-center-maximized-address-color:var(--primary-text-color);
+    --account-center-network-selector-color:var(--background-color);
+    --account-center-maximized-upper-action-color:#575b63;
+ 
+    --onboard-modal-z-index:21;
+    --account-center-z-index:20;
+  
+
+   
+    --onboard-warning-700:#738282;
+    --onboard-warning-600:#889696;
+    --onboard-warning-500:#9EA9A9;
+    --onboard-warning-400:#B3BCBC;
+    --onboard-warning-300:#C9CFCF;
+    --onboard-warning-200:#DFE2E2;
+    --onboard-warning-100:#F4F5F5;
+
+    --account-center-chain-warning: #738282;
+    --account-center-minimized-chain-select-background-warning: #F4F5F5;
+
+    --onboard-success-100: #B5F8E2;
+    --onboard-success-200: #90F4D4;
+    --onboard-success-300: #6AF0C6;
+    --onboard-success-400: #45EDB8;
+    --onboard-success-500: #20E9A9;
+    --onboard-success-600: #14CC92;
+    --onboard-success-700: #11A777;
+    --onboard-connect-text-color:black;
+  }

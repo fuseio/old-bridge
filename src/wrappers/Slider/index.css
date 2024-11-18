@@ -1,0 +1,18 @@
+.slider{
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    border-radius: 9999px;
+    height: 8px;
+    background-color: #4B4D58;
+
+}
+.slider::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    height: 14px;
+    width: 14px;
+    border-radius: 9999px;
+    border:1px solid white;
+    background-color: #70E000;
+}

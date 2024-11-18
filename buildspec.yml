@@ -1,0 +1,18 @@
+version: 0.2
+phases:
+  install:
+    runtime-versions:
+      nodejs: 16
+  build:
+    commands:
+      - yarn
+      - yarn build
+  post_build:
+    commands:
+      - echo $HTPASSWD_CONTENT > ./build/.htpasswd
+      - aws s3 sync build s3://${BUCKET} --exclude ".git/*" --acl public-read --cache-control 'max-age=300,public' --delete
+      - aws cloudfront create-invalidation --distribution-id "${DISTRIBUTION_ID}" --paths "/*"
+artifacts:
+  base-directory: build
+  files:
+    - '**/*'

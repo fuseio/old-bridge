@@ -1,0 +1,79 @@
+[
+  {
+    "type": "constructor",
+    "stateMutability": "nonpayable",
+    "inputs": [
+      { "type": "address", "name": "_oldRouter", "internalType": "contract IVoltageRouter01" },
+      { "type": "address", "name": "_router", "internalType": "contract IVoltageRouter01" }
+    ]
+  },
+  {
+    "type": "event",
+    "name": "OwnershipTransferred",
+    "inputs": [
+      { "type": "address", "name": "previousOwner", "internalType": "address", "indexed": true },
+      { "type": "address", "name": "newOwner", "internalType": "address", "indexed": true }
+    ],
+    "anonymous": false
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "migrate",
+    "inputs": [
+      { "type": "address", "name": "tokenA", "internalType": "address" },
+      { "type": "address", "name": "tokenB", "internalType": "address" },
+      { "type": "uint256", "name": "liquidity", "internalType": "uint256" },
+      { "type": "uint256", "name": "amountAMin", "internalType": "uint256" },
+      { "type": "uint256", "name": "amountBMin", "internalType": "uint256" },
+      { "type": "uint256", "name": "deadline", "internalType": "uint256" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "migrateWithPermit",
+    "inputs": [
+      { "type": "address", "name": "tokenA", "internalType": "address" },
+      { "type": "address", "name": "tokenB", "internalType": "address" },
+      { "type": "uint256", "name": "liquidity", "internalType": "uint256" },
+      { "type": "uint256", "name": "amountAMin", "internalType": "uint256" },
+      { "type": "uint256", "name": "amountBMin", "internalType": "uint256" },
+      { "type": "uint256", "name": "deadline", "internalType": "uint256" },
+      { "type": "uint8", "name": "v", "internalType": "uint8" },
+      { "type": "bytes32", "name": "r", "internalType": "bytes32" },
+      { "type": "bytes32", "name": "s", "internalType": "bytes32" }
+    ]
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "address", "name": "", "internalType": "contract IVoltageRouter01" }],
+    "name": "oldRouter",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "address", "name": "", "internalType": "address" }],
+    "name": "owner",
+    "inputs": []
+  },
+  { "type": "function", "stateMutability": "nonpayable", "outputs": [], "name": "renounceOwnership", "inputs": [] },
+  {
+    "type": "function",
+    "stateMutability": "view",
+    "outputs": [{ "type": "address", "name": "", "internalType": "contract IVoltageRouter01" }],
+    "name": "router",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "stateMutability": "nonpayable",
+    "outputs": [],
+    "name": "transferOwnership",
+    "inputs": [{ "type": "address", "name": "newOwner", "internalType": "address" }]
+  }
+]
