@@ -39,7 +39,6 @@ import { CONSOLE_FUSE_IO_BRIDGE } from '../../constants/externalLinks'
 import useCheckBridgeLiquidity from '../../hooks/useCheckBridgeLiquidity'
 import { CurrencyInputDropdown } from '../../wrappers/CurrencyInputDropdown'
 import UnsupportedBridgeTokenModal from '../../modals/UnsupportedBridgeTokenModal'
-import BridgeDeprecationBanner from '../../components/Banners/BridgeDeprecationBanner'
 import { getApprovalAddress, getBridge, isContract, supportRecipientTransfer } from '../../utils'
 import { useTransactionRejectedNotification } from '../../hooks/notifications/useTransactionRejectedNotification'
 import {
@@ -58,6 +57,8 @@ import {
   useDerivedBridgeInfo,
   useDetectBridgeDirection,
 } from '../../state/bridge/hooks'
+import Menu from '../../components/Menu'
+import MobileNav from '../../components/MobileNav'
 
 export const GradientWrapper = styled(Wrapper)`
   display: flex;
@@ -283,7 +284,53 @@ export default function Bridge() {
 
   return (
     <>
-      <AppBody>
+      <Box
+        sx={{
+          backgroundImage: ['none', `url('/images/landing/hero-background.svg')`],
+          backgroundSize: 'contain',
+          backgroundPosition: 'top 0 right -20vw',
+          backgroundRepeat: 'no-repeat',
+          minHeight: ['auto', '900px'],
+        }}
+        as="section"
+      >
+        <Menu />
+        <MobileNav />
+        <Flex
+          px={3}
+          py={4}
+          sx={{
+            minHeight: ['auto', 'calc(900px - 80px)'],
+            alignItems: 'center',
+            justifyContent: 'flex-start',
+          }}
+        >
+          <Flex
+            width={'100%'}
+            maxWidth={'1200px'}
+            mx="auto"
+            sx={{
+              alignItems: 'flex-start',
+              flexDirection: 'column',
+              gap: 4,
+            }}
+          >
+            <Text fontSize={[5, '60px']} fontWeight={700} maxWidth={'600px'} as="h1">
+              Voltage Bridge Withdrawal Portal
+            </Text>
+            <Text fontSize={3} color={'primary'} maxWidth={'550px'} as="p">
+              The old Voltage Finance DEX bridge was deprecated on December 1, 2024. This portal is for you if your funds remain blocked in the bridge.
+            </Text>
+            <Button
+              variant='blackPrimary'
+              px={4}
+            >
+              Learn More
+            </Button>
+          </Flex>
+        </Flex>
+      </Box>
+      <AppBody pb={6} isFooter={false}>
         <UnsupportedBridgeTokenModal isOpen={modalOpen} setIsOpen={setModalOpen} />
         <BridgeInfoModal open={feeModalOpen} setOpen={setFeeModalOpen} />
 
@@ -308,13 +355,15 @@ export default function Bridge() {
         </ModalLegacy>
 
         <Page>
-          <Page.Header>Bridge</Page.Header>
-
-          <Page.Subheader>
-            Select a token to bridge to {chainId !== ChainId.FUSE ? `the Fuse Network` : `Binance or Ethereum`}
-          </Page.Subheader>
-
-          <BridgeDeprecationBanner/>
+          <Box
+            sx={{
+              textAlign: 'center',
+            }}
+          >
+            <Page.Header fontSize={[4, '56px']}>
+              Withdraw your funds by March 1, 2025. The portal will close after this date.
+            </Page.Header>
+          </Box>
 
           <Page.Body>
             <Flex sx={{ gap: 4 }} flexDirection={['column', 'row']} style={{ width: '100%' }}>
@@ -334,14 +383,14 @@ export default function Bridge() {
                           defaultOption={
                             wallet
                               ? chainId && {
-                                  text: CHAIN_MAP[chainId]?.chainName,
-                                  src: CHAIN_MAP[chainId]?.icon,
-                                  id: chainId,
-                                }
+                                text: CHAIN_MAP[chainId]?.chainName,
+                                src: CHAIN_MAP[chainId]?.icon,
+                                id: chainId,
+                              }
                               : {
-                                  text: 'Source',
-                                  id: 'Source',
-                                }
+                                text: 'Source',
+                                id: 'Source',
+                              }
                           }
                           onChange={async (option, setValue) => {
                             await addChain(CHAIN_MAP[option.id])
@@ -365,12 +414,12 @@ export default function Bridge() {
                               ? chainId !== ChainId.FUSE
                                 ? DROPDOWN_FUSE_CHAIN
                                 : bridgeDirection === BridgeDirection.FUSE_TO_ETH
-                                ? DROPDOWN_ETH_CHAIN
-                                : DROPDOWN_BNB_CHAIN
+                                  ? DROPDOWN_ETH_CHAIN
+                                  : DROPDOWN_BNB_CHAIN
                               : {
-                                  text: 'Destination',
-                                  id: 'Destination',
-                                }
+                                text: 'Destination',
+                                id: 'Destination',
+                              }
                           }
                           onChange={(option, setValue) => {
                             setValue(option)
@@ -391,8 +440,8 @@ export default function Bridge() {
                             !wallet
                               ? []
                               : chainId !== ChainId.FUSE
-                              ? [DROPDOWN_FUSE_CHAIN]
-                              : [DROPDOWN_ETH_CHAIN, DROPDOWN_BNB_CHAIN]
+                                ? [DROPDOWN_FUSE_CHAIN]
+                                : [DROPDOWN_ETH_CHAIN, DROPDOWN_BNB_CHAIN]
                           }
                         />
                       </Flex>

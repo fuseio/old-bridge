@@ -4,7 +4,6 @@ import { useHistory, useLocation } from 'react-router-dom'
 import { Box, Card, Flex, Text } from 'rebass/styled-components'
 import { MENU } from '../../constants'
 import { useOnClickOutside } from '../../hooks/useOnClickOutside'
-import { isHomePage } from '../../utils'
 
 export const Navbar = () => {
   const [activeIndex, setActiveIndex] = useState(-1)
@@ -53,7 +52,7 @@ export const Navbar = () => {
                     sub?.map(({ to }) => to).includes(location?.pathname) ||
                     to === location?.pathname ||
                     sub?.some(({ additional }: any) => includesPath(location, additional || []))
-                    ? isHomePage(location) ? '#333333' : 'white'
+                    ? 'white'
                     : 'transparent',
               }}
               onClick={() => {
@@ -67,12 +66,12 @@ export const Navbar = () => {
             >
               {(
                 <Flex alignItems="center">
-                  <Text fontSize={2} color={isHomePage(location) ? "white" : "black"} fontWeight={700}>
+                  <Text fontSize={2} color="black" fontWeight={700}>
                     {name}
                   </Text>
                   {
                     Icon ? <Box mt={1} ml={0}>
-                      <Icon scale={0.5} width={20} height={20} color={isHomePage(location) ? "white" : "black"} opacity={0.5} />
+                      <Icon scale={0.5} width={20} height={20} color="black" opacity={0.5} />
                     </Box> : null
                   }
 

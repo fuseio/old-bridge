@@ -17,8 +17,8 @@ export default function Web3Status() {
     <>
       <CustomAccountCenter />
 
-      <Flex sx={{ gap: 2, zIndex: 10 }}>
-        {!wallet && (
+      {!wallet && (
+        <Flex sx={{ gap: 2, zIndex: 10 }}>
           <Box sx={{ position: 'relative', zIndex: 4 }}>
             <Button
               id="connect-wallet"
@@ -33,8 +33,8 @@ export default function Web3Status() {
               Connect
             </Button>
           </Box>
-        )}
-      </Flex>
+        </Flex>
+      )}
     </>
   )
 }
