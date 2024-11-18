@@ -3,7 +3,7 @@ import connectWallet from "../utils/connect-wallet"
 describe('Bridge', () => {
   describe('Fuse', () => {
     beforeEach(() => {
-      cy.visit('/bridge')
+      cy.visit('/')
 
       connectWallet()
     })

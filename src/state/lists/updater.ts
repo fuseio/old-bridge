@@ -53,60 +53,6 @@ export default function Updater(): null {
 
   // automatically update lists if versions are minor/patch
   useEffect(() => {
-    Object.keys(swapLists).forEach(listUrl => {
-      const list = swapLists[listUrl]
-      if (list.current && list.pendingUpdate) {
-        const bump = getVersionUpgrade(list.current.version, list.pendingUpdate.version)
-        switch (bump) {
-          case VersionUpgrade.NONE:
-            throw new Error('unexpected no version bump')
-          case VersionUpgrade.PATCH:
-          case VersionUpgrade.MINOR:
-            const min = minVersionBump(list.current.tokens, list.pendingUpdate.tokens)
-            // automatically update minor/patch as long as bump matches the min update
-            if (bump >= min) {
-              dispatch(acceptListUpdate({ url: listUrl, listType: 'Swap' }))
-              dispatch(
-                addPopup({
-                  key: listUrl,
-                  content: {
-                    listUpdate: {
-                      listUrl,
-                      oldList: list.current,
-                      newList: list.pendingUpdate,
-                      auto: true,
-                      listType: 'Swap'
-                    }
-                  }
-                })
-              )
-            } else {
-              console.error(
-                `List at url ${listUrl} could not automatically update because the version bump was only PATCH/MINOR while the update had breaking changes and should have been MAJOR`
-              )
-            }
-            break
-
-          case VersionUpgrade.MAJOR:
-            dispatch(
-              addPopup({
-                key: listUrl,
-                content: {
-                  listUpdate: {
-                    listUrl,
-                    auto: false,
-                    oldList: list.current,
-                    newList: list.pendingUpdate,
-                    listType: 'Swap'
-                  }
-                },
-                removeAfterMs: null
-              })
-            )
-        }
-      }
-    })
-
     Object.keys(bridgeLists).forEach(listUrl => {
       const list = bridgeLists[listUrl]
       if (list.current && list.pendingUpdate) {

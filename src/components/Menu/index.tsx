@@ -1,19 +1,10 @@
 import styled from 'styled-components'
 import { ExternalLink } from 'react-feather'
-import { Link, useHistory, useLocation } from 'react-router-dom'
-import { Box, Button, Flex, Image } from 'rebass/styled-components'
+import { Box, Flex, Image } from 'rebass/styled-components'
 
-import { Navbar } from '../Navbar'
-import { useWeb3 } from '../../hooks'
 import Web3Status from '../Web3Status'
-import { isHomePage } from '../../utils'
-import { Hidden } from '../../wrappers/Hidden'
-import { WalletIcon, MenuNav } from '../Icons'
-import { GetAppButton } from '../Button/getApp'
-import { useToggleNavMenu } from '../../state/application/hooks'
 
-import LogoIcon from '../../assets/svg/voltage.svg'
-import LogoIconBlack from '../../assets/svg/voltage-black.svg'
+import FuseLogo from '../../assets/svg/logos/fuse.svg'
 
 const activeClassName = 'ACTIVE'
 
@@ -95,7 +86,7 @@ export const MenuItem = styled.a`
 `};
 `
 
-export const MenuItemExternal = styled(ExternalLink)<{ pl?: string }>`
+export const MenuItemExternal = styled(ExternalLink) <{ pl?: string }>`
   width: 100%;
   height: 48px;
   text-decoration: none;
@@ -157,12 +148,6 @@ export const Item = styled(ExternalLink)`
 `
 
 export default function Sidebar() {
-  const openNavMenu = useToggleNavMenu()
-  const history = useHistory()
-  const location = useLocation()
-
-  const { account } = useWeb3()
-
   return (
     <Box
       alignItems={'center'}
@@ -174,126 +159,10 @@ export default function Sidebar() {
       bg={'transparent'}
     >
       <Flex justifyContent={'space-between'} px={3} height={'100%'} mx="auto" alignItems={'center'} as="nav">
-        <Flex sx={{ position: 'relative' }} style={{ cursor: 'pointer' }} alignItems={'center'}>
-          <Link to="/home">
-            <Image width={125} src={isHomePage(location) ? LogoIcon : LogoIconBlack} />
-          </Link>
-        </Flex>
-
-        <Hidden tablet mobile>
-          <Box
-            sx={{
-              zIndex: 20,
-              position: 'absolute',
-              left: '50%',
-              top: '50%',
-              transform: 'translate(-50%,-50%)',
-            }}
-          >
-            <Navbar />
-          </Box>
-        </Hidden>
-
-        <Flex
-          sx={{
-            gap: '12px',
-          }}
-        >
-          <Flex
-            sx={{
-              alignItems: 'center',
-              gap: '12px',
-              width: '100%',
-            }}
-          >
-            <Box display={['none', 'flex']}>
-              <GetAppButton isSmall variant={isHomePage(location) ? 'greenSecondary' : 'blackSecondary'} />
-            </Box>
-
-            <Web3Status />
-
-            {/* {account ? (
-              <Web3Status />
-            ) : (
-              <>
-                <GetAppButton isSmall variant={isHomePage(location) ? 'greenSecondary' : 'blackSecondary'} />
-
-                <Button
-                  display={['none', 'block']}
-                  variant={isHomePage(location) ? 'greenPrimary' : 'blackPrimary'}
-                  onClick={() => {
-                    history.push('/swap')
-                  }}
-                >
-                  <Flex alignItems={'center'} style={{ gap: '10px', color: 'inherit' }}>
-                    Start Trading
-                    <WalletIcon />
-                  </Flex>
-                </Button>
-                <Button
-                  display={['block', 'none']}
-                  variant={isHomePage(location) ? 'greenPrimary' : 'blackPrimary'}
-                  onClick={() => {
-                    history.push('/swap')
-                  }}
-                >
-                  Trade
-                </Button>
-              </>
-            )} */}
-
-            <Box
-              sx={{
-                alignItems: 'center',
-                gap: '12px',
-                width: '100%',
-              }}
-              display={['flex', 'none']}
-            >
-              {account ? (
-                <>
-                  <GetAppButton isSmall variant={isHomePage(location) ? 'greenSecondary' : 'blackSecondary'} />
-
-                  <Button
-                    display={['none', 'block']}
-                    variant={isHomePage(location) ? 'greenPrimary' : 'blackPrimary'}
-                    onClick={() => {
-                      history.push('/swap')
-                    }}
-                  >
-                    <Flex alignItems={'center'} style={{ gap: '10px', color: 'inherit' }}>
-                      Start Trading
-                      <WalletIcon />
-                    </Flex>
-                  </Button>
-                  <Button
-                    display={['block', 'none']}
-                    variant={isHomePage(location) ? 'greenPrimary' : 'blackPrimary'}
-                    onClick={() => {
-                      history.push('/swap')
-                    }}
-                  >
-                    Trade
-                  </Button>
-                </>
-              ) : (
-                <></>
-              )}
-            </Box>
-          </Flex>
-
-          <Hidden desktop>
-            <Flex
-              py={3}
-              justifyContent={'center'}
-              onClick={() => {
-                openNavMenu()
-              }}
-            >
-              <MenuNav stroke={isHomePage(location) ? 'white' : 'black'} />
-            </Flex>
-          </Hidden>
-        </Flex>
+        <a href="https://www.fuse.io">
+          <Image width={125} src={FuseLogo} />
+        </a>
+        <Web3Status />
       </Flex>
     </Box>
   )

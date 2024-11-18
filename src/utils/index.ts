@@ -1153,7 +1153,3 @@ function convertToSubscript(decimalDifference) {
     .map((char) => subscriptMap[char] || char)
     .join('')
 }
-
-export function isHomePage(location) {
-  return location.pathname.includes('home')
-}

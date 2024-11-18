@@ -35,13 +35,17 @@ export default function AppBody({
   maxWidth = 1200,
   height = 'fit-content',
   pt = 4,
+  pb = 0,
   children,
+  isFooter = true,
 }: {
   disableLoading?: boolean
   maxWidth?: number
   pt?: any
+  pb?: any
   children: React.ReactNode
   height?: number | string
+  isFooter?: boolean
 }) {
   const { connecting } = useWeb3()
 
@@ -56,6 +60,7 @@ export default function AppBody({
           }}
           maxWidth={maxWidth}
           pt={pt}
+          pb={pb}
           // maxHeight={'fit-content'}
           // minHeight="calc(100vh - 80px)"
           height={height}
@@ -66,7 +71,7 @@ export default function AppBody({
         </Box>
       </motion.main>
       <Box my={4}></Box>
-      <Footer maxWidth={maxWidth} />
+      {isFooter && <Footer maxWidth={maxWidth} />}
     </Box>
   )
 }
