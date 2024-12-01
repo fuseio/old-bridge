@@ -288,9 +288,8 @@ export default function Bridge() {
         sx={{
           backgroundImage: ['none', `url('/images/landing/hero-background.svg')`],
           backgroundSize: 'contain',
-          backgroundPosition: 'top 0 right -20vw',
+          backgroundPosition: 'top 0 right -5vw',
           backgroundRepeat: 'no-repeat',
-          minHeight: ['auto', '900px'],
         }}
         as="section"
       >
@@ -298,9 +297,8 @@ export default function Bridge() {
         <MobileNav />
         <Flex
           px={3}
-          py={4}
+          py={5}
           sx={{
-            minHeight: ['auto', 'calc(900px - 80px)'],
             alignItems: 'center',
             justifyContent: 'flex-start',
           }}
@@ -324,13 +322,16 @@ export default function Bridge() {
             <Button
               variant='blackPrimary'
               px={4}
+              onClick={() => {
+                window.open("https://medium.com/@voltage.finance/voltage-bridge-final-sunsetting-heres-what-you-need-to-know-73471ebedd7a", '_blank')
+              }}
             >
               Learn More
             </Button>
           </Flex>
         </Flex>
       </Box>
-      <AppBody pb={6} isFooter={false}>
+      <AppBody pb={4} isFooter={false}>
         <UnsupportedBridgeTokenModal isOpen={modalOpen} setIsOpen={setModalOpen} />
         <BridgeInfoModal open={feeModalOpen} setOpen={setFeeModalOpen} />
 

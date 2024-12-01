@@ -160,7 +160,7 @@ export default function Sidebar() {
     >
       <Flex justifyContent={'space-between'} px={3} height={'100%'} mx="auto" alignItems={'center'} as="nav">
         <a href="https://www.fuse.io">
-          <Image width={125} src={FuseLogo} />
+          <Image width={90} src={FuseLogo} alt="Fuse" />
         </a>
         <Web3Status />
       </Flex>
